@@ -1,9 +1,9 @@
 package ase_filament_tracker.domain.service
 
-import ase_filament_tracker.domain.model.StorgaeLocation.DuplicateStorageLocationException
-import ase_filament_tracker.domain.model.StorgaeLocation.LocationPath
-import ase_filament_tracker.domain.model.StorgaeLocation.StorageLocation
-import ase_filament_tracker.domain.model.StorgaeLocation.StorageLocationId
+import ase_filament_tracker.domain.model.StorageLocation.DuplicateStorageLocationException
+import ase_filament_tracker.domain.model.StorageLocation.LocationPath
+import ase_filament_tracker.domain.model.StorageLocation.StorageLocation
+import ase_filament_tracker.domain.model.StorageLocation.StorageLocationId
 import ase_filament_tracker.domain.repository.StorageLocationRepository
 
 class StorageLocationService(

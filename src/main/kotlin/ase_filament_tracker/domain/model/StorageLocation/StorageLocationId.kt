@@ -1,4 +1,4 @@
-package ase_filament_tracker.domain.model.StorgaeLocation
+package ase_filament_tracker.domain.model.StorageLocation
 
 import java.util.UUID
 

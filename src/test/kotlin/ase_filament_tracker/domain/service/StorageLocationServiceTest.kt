@@ -1,7 +1,7 @@
 package ase_filament_tracker.domain.service
 
-import ase_filament_tracker.domain.model.StorgaeLocation.DuplicateStorageLocationException
-import ase_filament_tracker.domain.model.StorgaeLocation.LocationPath
+import ase_filament_tracker.domain.model.StorageLocation.DuplicateStorageLocationException
+import ase_filament_tracker.domain.model.StorageLocation.LocationPath
 import ase_filament_tracker.domain.repository.StorageLocationRepository
 import io.mockk.every
 import io.mockk.mockk
