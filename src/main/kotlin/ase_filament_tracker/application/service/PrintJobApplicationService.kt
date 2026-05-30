@@ -37,7 +37,6 @@ class PrintJobApplicationService(
             ?: throw IllegalArgumentException("PrintJob not found: ${command.printJobId}")
         val actualUsage = MaterialUsage(command.actualUsageInGrams)
 
-        // Finish the job — emits PrintJobCompletedEvent
         printJob.finishJob(actualUsage)
 
         // Reduce filament stock
