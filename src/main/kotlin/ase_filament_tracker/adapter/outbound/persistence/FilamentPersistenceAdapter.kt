@@ -29,8 +29,18 @@ class FilamentPersistenceAdapter(
     override fun findById(id: FilamentId): Filament? {
         val entityOpt = springDataRepository.findById(id.value.toString())
         if (entityOpt.isEmpty) return null
-        
-        val entity = entityOpt.get()
+        return toDomain(entityOpt.get())
+    }
+
+    override fun findAll(): List<Filament> {
+        return springDataRepository.findAll().map { toDomain(it) }
+    }
+
+    override fun delete(id: FilamentId) {
+        springDataRepository.deleteById(id.value.toString())
+    }
+
+    private fun toDomain(entity: FilamentJpaEntity): Filament {
         return Filament(
             id = FilamentId(UUID.fromString(entity.id)),
             color = Color(entity.colorName, entity.colorHex),
