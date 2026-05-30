@@ -7,10 +7,9 @@ class Filament(
     var remainingWeight: Weight
 ) {
     fun consume(amount: Weight) {
-        val newWeight = remainingWeight.valueInGrams - amount.valueInGrams
-        require(newWeight >= 0) {
+        require(remainingWeight >= amount) {
             "Nicht genug Filament vorhanden. Verfügbar: ${remainingWeight.valueInGrams}g, Angefordert: ${amount.valueInGrams}g"
         }
-        remainingWeight = Weight(newWeight)
+        remainingWeight -= amount
     }
 }
