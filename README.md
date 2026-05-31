@@ -3,7 +3,7 @@
 ## Zweck des Projekts
 Der Filament Tracker ist eine Backend-Anwendung zur Verwaltung von 3D-Drucker-Filamenten. Sie ermöglicht es, Filamentspulen mit Details wie Material, Farbe und Gewicht zu erfassen, konkrete Druckaufträge (PrintJobs) abzuwickeln und den daraus resultierenden Filament-Verbrauch zu berechnen. Zudem können Verbrauchsstatistiken ermittelt und Nachbestell-Schwellenwerte (Reorder Thresholds) überwacht werden.
 
-Das Projekt ist konsequent nach den Ideen des **Domain-Driven Design (DDD)** und als **Hexagonale Architektur (Ports and Adapters)** aufgebaut. Die Geschäftslogik ist strikt von technischen Details wie Datenbanken oder Web-Schnittstellen getrennt, was die Anwendung hervorragend testbar und wartbar macht.
+Das Projekt ist nach den Ideen des **Domain-Driven Design (DDD)** und als **Hexagonale Architektur (Ports and Adapters)** aufgebaut. Die Geschäftslogik ist strikt von technischen Details wie Datenbanken oder Web-Schnittstellen getrennt, was die Anwendung testbar und wartbar macht.
 
 ## Technologien
 * **Programmiersprache:** Kotlin
